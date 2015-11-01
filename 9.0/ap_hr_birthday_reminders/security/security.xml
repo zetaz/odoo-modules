@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Audrius Palenskis <audrius.palenskis@gmail.com> -->
+<openerp>
+    <data noupdate="1">
+        <record id="hr_ap_bday_reminder_rule" model="ir.rule">
+            <field name="name">AP Birthday Reminder multi company rule</field>
+            <field name="model_id" ref="model_ap_hr_birthday_reminder_recipient"/>
+            <field eval="True" name="global"/>
+            <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+        </record>
+    </data>
+</openerp>

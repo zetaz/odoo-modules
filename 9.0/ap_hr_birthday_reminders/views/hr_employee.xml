@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Audrius Palenskis <audrius.palenskis@gmail.com> -->
+<openerp>
+    <data>
+        <record id="view_employee_ap_birthday_reminder_form" model="ir.ui.view">
+            <field name="name">hr.employee.ap.birthday.reminder.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='active_group']" position="inside">
+                    <field name="birthday_reminders"/>
+                </xpath>
+                <xpath expr="//field[@name='birthday']" position="after">
+                    <field name="next_birthday_date" groups="base.group_hr_user,base.group_hr_manager"/>
+                    <field name="next_birthday_reminder_date" groups="base.group_hr_user,base.group_hr_manager"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_employee_ap_birthday_reminder_tree" model="ir.ui.view">
+            <field name="name">hr.employee.ap.birthday.reminder.tree</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='job_id']" position="after">
+                    <field name="next_birthday_date" groups="base.group_hr_user,base.group_hr_manager"/>
+                    <field name="next_birthday_reminder_date" groups="base.group_hr_user,base.group_hr_manager"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_employee_filter" model="ir.ui.view">
+            <field name="name">Employees</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='job_id']" position="after">
+                    <field name="next_birthday_date" groups="base.group_hr_user,base.group_hr_manager"/>
+                    <field name="next_birthday_reminder_date" groups="base.group_hr_user,base.group_hr_manager"/>
+                </xpath>
+             </field>
+         </record>
+    </data>
+</openerp>

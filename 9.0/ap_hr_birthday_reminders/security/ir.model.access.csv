@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_ap_hr_birthday_reminder_recipient_all,ap.hr.birthday.reminder.recipient all,model_ap_hr_birthday_reminder_recipient,base.group_user,1,0,0,0
+access_ap_hr_birthday_reminder_recipient_hr_manager,ap.hr.birthday.reminder.recipient hr_manager,model_ap_hr_birthday_reminder_recipient,base.group_hr_manager,1,1,1,1
+

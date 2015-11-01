@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Audrius Palenskis <audrius.palenskis@gmail.com> -->
+<openerp>
+    <data noupdate="1">
+        <!--Default Notification Email template -->
+        <record id="mail_template_birthday_reminder_template" model="mail.template">
+            <field name="name">Employee Birthday Reminder Email</field>
+            <field name="subject">Birthday reminder</field>
+            <field name="email_from">${(object.company_id.email or 'noreply@localhost')|safe}</field>
+            <field name="email_to">${object.email}</field>
+            <field name="partner_to">${object.id or ''}</field>
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="lang">${object.lang}</field>
+            <field name="body_html"><![CDATA[
+<div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); ">
+    Hi,<br/>
+    <p>Birthday reminder on <span style="font-weight:bold;">__birthday__</span> for employees:<br/>
+    __employees__
+    </p>
+</div>
+]]></field>
+        </record>
+    </data>
+</openerp>

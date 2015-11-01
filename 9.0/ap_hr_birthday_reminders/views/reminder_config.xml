@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Audrius Palenskis <audrius.palenskis@gmail.com> -->
+<openerp>
+    <data>
+
+        <record id="view_ap_hr_birthday_reminder_config_form" model="ir.ui.view">
+            <field name="name">ap.hr.birthday.reminder.config.form</field>
+            <field name="model">ap.hr.birthday.reminder.config.settings</field>
+            <field name="arch" type="xml">
+                <form string="Birthday Reminder Configuration">
+                    <header>
+                        <button string="Save" type="object" name="apply_settings" class="oe_highlight"/>
+                        <button string="Cancel" type="object" name="cancel"/>
+                    </header>
+                    <form>
+                        <group>
+                            <group>
+                                <field name="company_id" invisible="1"/>
+                                <field name="remind_days_before"/>
+                                <field name="reminder_recipients" widget="many2many_tags"
+                                       domain="[('company_id', '=', company_id)]"/>
+                            </group>
+                            <group>
+
+                            </group>
+                        </group>
+                    </form>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_ap_hr_birthday_reminder_config" model="ir.actions.act_window">
+            <field name="name">Birthday Reminders</field>
+            <field name="res_model">ap.hr.birthday.reminder.config.settings</field>
+            <field name="view_id" ref="view_ap_hr_birthday_reminder_config_form"/>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+        </record>
+
+        <menuitem id="menu_ap_hr_birthday_reminder_configuration"
+                  parent="hr.menu_human_resources_configuration" sequence="50"
+                  action="action_ap_hr_birthday_reminder_config"
+                  groups="base.group_hr_user"/>
+
+    </data>
+</openerp>

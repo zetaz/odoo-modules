@@ -1,0 +1,175 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ap_hr_birthday_reminders
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0-20151031\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-01 19:46+0200\n"
+"PO-Revision-Date: 2015-11-01 19:49+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.4\n"
+"Last-Translator: \n"
+"Language: lt\n"
+
+#. module: ap_hr_birthday_reminders
+#: model:mail.template,body_html:ap_hr_birthday_reminders.mail_template_birthday_reminder_template
+msgid ""
+"\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-"
+"serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, "
+"255, 255); \">\n"
+"    Hi,<br/>\n"
+"    <p>Birthday reminder on <span style=\"font-weight:bold;\">__birthday__</"
+"span> for employees:<br/>\n"
+"    __employees__\n"
+"    </p>\n"
+"</div>\n"
+msgstr ""
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.ui.view,arch_db:ap_hr_birthday_reminders.view_ap_hr_birthday_reminder_config_form
+msgid "Birthday Reminder Configuration"
+msgstr "Gimtadienio priminimų konfigūravimas"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_res_company_birthday_remind_days_before
+msgid "Birthday Reminder Days"
+msgstr "Priminti prieš gimtadienį, dienos"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.actions.act_window,name:ap_hr_birthday_reminders.action_ap_hr_birthday_reminder_config
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_hr_employee_birthday_reminders
+#: model:ir.ui.menu,name:ap_hr_birthday_reminders.menu_ap_hr_birthday_reminder_configuration
+msgid "Birthday Reminders"
+msgstr "Gimtadeinio priminimai"
+
+#. module: ap_hr_birthday_reminders
+#: model:mail.template,subject:ap_hr_birthday_reminders.mail_template_birthday_reminder_template
+msgid "Birthday reminder"
+msgstr "Gimtadienio priminimas"
+
+#. module: ap_hr_birthday_reminders
+#: code:addons/ap_hr_birthday_reminders/models/res_partner.py:23
+#, python-format
+msgid "Birthday reminder mail template does not exist."
+msgstr "Nerastas gimtadienio priminimo laiško šablonas."
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.ui.view,arch_db:ap_hr_birthday_reminders.view_ap_hr_birthday_reminder_config_form
+msgid "Cancel"
+msgstr "Atšaukti"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model,name:ap_hr_birthday_reminders.model_res_company
+msgid "Companies"
+msgstr "Įmonės"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_config_settings_company_id
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_recipient_company_id
+msgid "Company"
+msgstr "Įmonė"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_config_settings_create_uid
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_recipient_create_uid
+msgid "Created by"
+msgstr "Sukūrė"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_config_settings_create_date
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_recipient_create_date
+msgid "Created on"
+msgstr "Sukurta"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_config_settings_display_name
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_recipient_display_name
+msgid "Display Name"
+msgstr "Pavadinimas"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model,name:ap_hr_birthday_reminders.model_hr_employee
+msgid "Employee"
+msgstr "Darbuotojas"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_config_settings_id
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_recipient_id
+msgid "ID"
+msgstr ""
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,help:ap_hr_birthday_reminders.field_hr_employee_birthday_reminders
+msgid "Include me in birthday reminder program"
+msgstr "Priminti apie mano gimtadienį"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_config_settings___last_update
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_recipient___last_update
+msgid "Last Modified on"
+msgstr "Paskutinis keitimas"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_config_settings_write_uid
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_recipient_write_uid
+msgid "Last Updated by"
+msgstr "Paskutinis atnaujino"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_config_settings_write_date
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_recipient_write_date
+msgid "Last Updated on"
+msgstr "Paskutinis atnaujinimas"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_hr_employee_next_birthday_date
+msgid "Next Birthday"
+msgstr "Kitas gimtadienis"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_hr_employee_next_birthday_reminder_date
+msgid "Next Birthday Reminder"
+msgstr "Kito gimtadienio priminimas"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model,name:ap_hr_birthday_reminders.model_res_partner
+msgid "Partner"
+msgstr "Kontaktas"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_recipient_partner_id
+msgid "Partners"
+msgstr "Kontaktai"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_config_settings_reminder_recipients
+msgid "Recipients"
+msgstr "Gavėjai"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model.fields,field_description:ap_hr_birthday_reminders.field_ap_hr_birthday_reminder_config_settings_remind_days_before
+msgid "Remind days before"
+msgstr "Priminti prieš, dienos"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.ui.view,arch_db:ap_hr_birthday_reminders.view_ap_hr_birthday_reminder_config_form
+msgid "Save"
+msgstr "Saugoti"
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model,name:ap_hr_birthday_reminders.model_ap_hr_birthday_reminder_config_settings
+msgid "ap.hr.birthday.reminder.config.settings"
+msgstr ""
+
+#. module: ap_hr_birthday_reminders
+#: model:ir.model,name:ap_hr_birthday_reminders.model_ap_hr_birthday_reminder_recipient
+msgid "ap.hr.birthday.reminder.recipient"
+msgstr ""
